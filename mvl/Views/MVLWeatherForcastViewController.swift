@@ -25,7 +25,7 @@ class MVLWeatherForcastViewController: UIViewController, StoryboardView {
         initUI()
         self.reactor = self.viewModel
 
-        self.viewModel.action.onNext(MVLWeatherViewModel.Action.loadLocalSearchedKeys)
+        //self.viewModel.action.onNext(MVLWeatherViewModel.Action.loadLocalSearchedKeys)
     }
     
     func initUI() {
@@ -62,52 +62,14 @@ class MVLWeatherForcastViewController: UIViewController, StoryboardView {
             .compactMap({ $0 })
             .subscribe (onNext: { [weak self] key in
                 self?.weatherTableView.reloadData()
+                self?.view.endEditing(true)
               }).disposed(by: disposeBag)
         
-//        reactor.pulse(\.$showingScreen)
-//            .compactMap({ $0 })
-//            .subscribe (onNext: { [weak self] appScreen in
-//                switch appScreen {
-//                case .screenA:
-//                    self?.dispatcher?.showMainView()
-//                case .screenB:
-//                    self?.dispatcher?.showMapView(atCoordinate: reactor.currentState.editingPoint)
-//                    reactor.action.onNext(MVLViewModel.Action.loadLocalPoints)
-//                case .screenC:
-//                    self?.dispatcher?.showCoordinatePreview(pointA: reactor.currentState.pointA, pointB: reactor.currentState.pointB)
-//                }
-//              }).disposed(by: disposeBag)
-//
-//        reactor.pulse(\.$editingPoint)
-//            .compactMap({ $0 })
-//            .subscribe (onNext: { [weak self] mvlCoordinate in
-//                self?.screenB.mvlCoordinate = mvlCoordinate
-//              }).disposed(by: disposeBag)
-//
-//        reactor.pulse(\.$pointA)
-//            .compactMap({ $0 })
-//            .subscribe (onNext: { [weak self] mvlCoordinate in
-//                self?.screenA.pointA = mvlCoordinate
-//              }).disposed(by: disposeBag)
-//
-//        reactor.pulse(\.$pointB)
-//            .compactMap({ $0 })
-//            .subscribe (onNext: { [weak self] mvlCoordinate in
-//                self?.screenA.pointB = mvlCoordinate
-//              }).disposed(by: disposeBag)
-//
-//        reactor.pulse(\.$storedPoints).compactMap { result in
-//            return result
-//        }.subscribe { [weak self] mvlCoordinates in
-//            self?.screenB.localCoordinateView.coordinates = mvlCoordinates
-//        }.disposed(by: disposeBag)
-//
-//        reactor.state.map { $0.isLoadingPointInfo }
-//        .distinctUntilChanged()
-//        .bind(to: self.screenB.loadingPointActivityIndicatorView.rx.isAnimating)
-//        .disposed(by: disposeBag)
-        
-        
+        reactor.pulse(\.$alertMessage)
+            .compactMap({ $0 })
+            .subscribe (onNext: { [weak self] message in
+                self?.showAlert(withMessage: message)
+              }).disposed(by: disposeBag)
     }
 
 }
@@ -118,14 +80,15 @@ extension MVLWeatherForcastViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let searchkey = viewModel.currentState.currentKey else { return 0 }
-        return searchkey.weathers.count
+        guard !viewModel.currentState.currentKey.isEmptyData() else { return 0 }
+        return viewModel.currentState.currentKey.weathers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MVLWeatherTableViewCell", for: indexPath) as! MVLWeatherTableViewCell
         
-        if let searchKey = viewModel.currentState.currentKey {
+        if !viewModel.currentState.currentKey.isEmptyData() {
+            let searchKey = viewModel.currentState.currentKey
             let weather = searchKey.weathers[indexPath.row]
             cell.bindWeather(weather)
         }
@@ -140,6 +103,15 @@ extension MVLWeatherForcastViewController: UITableViewDataSource {
 extension MVLWeatherForcastViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 176
+    }
+}
+
+extension MVLWeatherForcastViewController {
+    func showAlert(withMessage message: String) {
+        let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+        })
+        present(alert, animated: true)
     }
 }
 
