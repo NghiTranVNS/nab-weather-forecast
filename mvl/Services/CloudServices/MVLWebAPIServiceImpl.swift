@@ -10,9 +10,6 @@ import Alamofire
 import ObjectMapper
 
 class MVLWebAPIServiceImpl: MVLWebAPIService {
-    static let aqiEndPoint = "https://api.waqi.info/feed/"
-    static let infoEndPoint = "https://api.bigdatacloud.net/data/reverse-geocode-client"
-
     func searchForWeatherForcast(city: String, completion: @escaping (WebAPIResponse<MVLSearchKey?>) -> Void) {
         guard city.count > GlobalVariables.minLengthOfKeyString else {
             completion(.failure(nil))

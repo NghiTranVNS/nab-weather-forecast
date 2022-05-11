@@ -9,6 +9,12 @@ import UIKit
 import RxSwift
 
 protocol MVLWeatherRepository {
+    //MARK: - Web API
+    var webAPIService: MVLWebAPIService { get set }
+
+    //MARK: - Local store
+    var localStoreService: MVLLocalStoreService { get set }
+    
     //MARK: - Web API - ReactiveX support
     func requestWeathersWithKey(_ key: String)  -> Observable<MVLSearchKey?>
     

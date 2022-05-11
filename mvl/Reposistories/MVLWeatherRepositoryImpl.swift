@@ -9,11 +9,9 @@ import UIKit
 import RxSwift
 
 class MVLWeatherRepositoryImpl: MVLWeatherRepository {
-    //MARK: - Web API
-    private let webAPIService: MVLWebAPIServiceImpl = MVLWebAPIServiceImpl()
-
-    //MARK: - Local store
-    private let localStoreService: MVLLocalStoreService = MVLLocalStoreServiceCoreDataImpl()
+    var webAPIService: MVLWebAPIService = MVLWebAPIServiceImpl()
+    
+    var localStoreService: MVLLocalStoreService = MVLLocalStoreServiceCoreDataImpl()
 }
 
 //MARK: - Web API - ReactiveX support
