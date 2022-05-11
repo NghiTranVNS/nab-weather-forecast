@@ -49,7 +49,7 @@ class MVLWeatherViewModel: Reactor {
         @Pulse var searchString: String
         @Pulse var searchedKeys: [MVLSearchKey]
         var isLoadingWeatherInfo: Bool
-        var isStartedSearching: Bool
+        @Pulse var isStartedSearching: Bool
         var keySaved: Bool
         @Pulse var alertMessage: String?
     }
@@ -73,11 +73,9 @@ class MVLWeatherViewModel: Reactor {
       switch action {
       case .loadLocalSearchedKeys:
           return Observable.concat([
-//            Observable.just(Mutation.setIsStartedSearching(true)),
             self.weatherRepository.loadLocalSearchKeys().map({ keys in
                 return Mutation.loadedLatestcurrentKeys(keys)
-            }),
-//            Observable.just(Mutation.setIsStartedSearching(true))
+            })
           ])
       case .retrieveLocalSearchedKeys(_):
           break
@@ -171,7 +169,7 @@ class MVLWeatherViewModel: Reactor {
             newState.isStartedSearching = startedSearching
         case .updateCurrentKey(let searchKey):
             newState.currentKey = searchKey
-        case .saveKeySuccessfully(let success):
+        case .saveKeySuccessfully(_):
             break
         }
         return newState

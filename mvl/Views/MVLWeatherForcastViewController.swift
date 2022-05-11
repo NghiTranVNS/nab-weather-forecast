@@ -70,6 +70,14 @@ class MVLWeatherForcastViewController: UIViewController, StoryboardView {
             .subscribe (onNext: { [weak self] message in
                 self?.showAlert(withMessage: message)
               }).disposed(by: disposeBag)
+        
+        reactor.pulse(\.$isStartedSearching)
+            .compactMap({ $0 })
+            .subscribe (onNext: { [weak self] isStartedSearching in
+                if !isStartedSearching {
+                    self?.view.endEditing(true)
+                }
+              }).disposed(by: disposeBag)
     }
 
 }
