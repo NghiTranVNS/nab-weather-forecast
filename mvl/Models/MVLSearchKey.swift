@@ -17,6 +17,10 @@ extension MVLSearchKey {
     func isTodaySearch() -> Bool {
         return Calendar.current.isDateInToday(date)
     }
+    
+    func isEmptyData() -> Bool {
+        return key.count == 0 || weathers.count == 0
+    }
 }
 
 struct MVLRawSearchKey: MVLSearchKey {

@@ -15,7 +15,6 @@ class MVLWebAPIServiceImpl: MVLWebAPIService {
 
     func searchForWeatherForcast(city: String, completion: @escaping (WebAPIResponse<MVLSearchKey?>) -> Void) {
         guard city.count > GlobalVariables.minLengthOfKeyString else {
-            print("FATAL: Loading weather forcast with ")
             completion(.failure(nil))
             return
         }

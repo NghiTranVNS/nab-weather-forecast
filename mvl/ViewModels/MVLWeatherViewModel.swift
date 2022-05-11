@@ -24,7 +24,9 @@ class MVLWeatherViewModel: Reactor {
         case cancelSearching
         case searchBarFocused
         case searchStringChanged(String)
-        case updateCurrentKey(MVLSearchKey?)
+        case updateCurrentKey(MVLSearchKey)
+        case showAlertMessage(String)
+        case saveKeyToLocalStore(MVLSearchKey)
     }
 
     // Mutate is a state manipulator which is not exposed to a view
@@ -37,17 +39,18 @@ class MVLWeatherViewModel: Reactor {
         case setIsLoadingWeatherInfo(Bool)
         case setIsStartedSearching(Bool)
         case setAlertMessage(String)
-        case updateCurrentKey(MVLSearchKey?)
-        
+        case updateCurrentKey(MVLSearchKey)
+        case saveKeySuccessfully(Bool)
     }
 
     // State is a current view state
     struct State {
-        @Pulse var currentKey: MVLSearchKey?
+        @Pulse var currentKey: MVLSearchKey
         @Pulse var searchString: String
         @Pulse var searchedKeys: [MVLSearchKey]
         var isLoadingWeatherInfo: Bool
         var isStartedSearching: Bool
+        var keySaved: Bool
         @Pulse var alertMessage: String?
     }
 
@@ -55,11 +58,12 @@ class MVLWeatherViewModel: Reactor {
     
     init() {
         self.initialState = State(
-            currentKey: nil,
+            currentKey: MVLRawSearchKey(),
             searchString: "",
             searchedKeys: [],
             isLoadingWeatherInfo: false,
             isStartedSearching: false,
+            keySaved: false,
             alertMessage: nil
         )
     }
@@ -78,6 +82,10 @@ class MVLWeatherViewModel: Reactor {
       case .retrieveLocalSearchedKeys(_):
           break
       case .searchWithKey(let keyString):
+          if keyString.count < GlobalVariables.minLengthOfKeyString {
+              return Observable.just(Mutation.setAlertMessage("The search term length must be from 3 characters or above."))
+          }
+          
           return Observable.concat([
             self.weatherRepository.loadLocalSearchKeys().map({ [weak self] keys in
                 if let key = keys.first(where: { $0.key.lowercased() == keyString.lowercased() && $0.isTodaySearch() }) {
@@ -105,24 +113,33 @@ class MVLWeatherViewModel: Reactor {
           return Observable.concat([
             self.weatherRepository.requestWeathersWithKey(keyString).map({ [weak self] key in
                 if let _key = key {
-                    self?.weatherRepository.storeSearchKeyToLocal(searchKey: _key).map({ storedKey in
-                        if storedKey != nil {
-                            print("Stored \(storedKey?.key ?? "") to DB")
-                        }
-                        else {
-                            print("Failed to store new key to DB")
-                        }
-                    })
+                    self?.action.onNext(Action.saveKeyToLocalStore(_key))
                     self?.action.onNext(Action.updateCurrentKey(_key))
                 }
                 else {
-                    self?.action.onNext(Action.updateCurrentKey(nil))
+                    self?.action.onNext(Action.updateCurrentKey(MVLRawSearchKey()))
+                    self?.action.onNext(Action.showAlertMessage("No weather forecast data found!"))
                 }
                 return Mutation.setIsLoadingWeatherInfo(false)
             })
           ])
       case .updateCurrentKey(let searchKey):
           return Observable.just(Mutation.updateCurrentKey(searchKey))
+      case .showAlertMessage(let message):
+          return Observable.just(Mutation.setAlertMessage(message))
+      case .saveKeyToLocalStore(let searchKey):
+          return Observable.concat([
+            self.weatherRepository.storeSearchKeyToLocal(searchKey: searchKey).map { storedKey in
+                if storedKey != nil {
+                    print("Stored \(storedKey?.key ?? "") to DB")
+                    return Mutation.saveKeySuccessfully(true)
+                }
+                else {
+                    print("Failed to store new key to DB")
+                    return Mutation.saveKeySuccessfully(false)
+                }
+            }
+          ])
       }
         
         //test
@@ -141,7 +158,6 @@ class MVLWeatherViewModel: Reactor {
             newState.alertMessage = message
         case .loadedLatestcurrentKeys(let keys):
             newState.searchedKeys = keys
-            newState.currentKey = keys.first
             break
         case .searchWithKey(_):
             break
@@ -155,6 +171,8 @@ class MVLWeatherViewModel: Reactor {
             newState.isStartedSearching = startedSearching
         case .updateCurrentKey(let searchKey):
             newState.currentKey = searchKey
+        case .saveKeySuccessfully(let success):
+            break
         }
         return newState
     }
