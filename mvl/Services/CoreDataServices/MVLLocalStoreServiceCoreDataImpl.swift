@@ -90,24 +90,6 @@ class MVLLocalStoreServiceCoreDataImpl {
             }
         }
     }
-    
-    func save(coordinates: [MVLCoordinate], completion: @escaping (Bool) -> Void) {
-        MagicalRecord.save({ (ctx) in
-            for mch in coordinates {
-                let entity = MVLLocalStoreCoordinate.mr_createEntity(in: ctx)
-                
-                entity?.c_name = mch.name
-                entity?.c_aqi = NSNumber(value: mch.aqi)
-                entity?.c_lat = NSNumber(value: mch.lat)
-                entity?.c_long = NSNumber(value: mch.long)
-            }
-        }) { (succeed, _) in
-            completion(succeed)
-        }
-    }
-    
-    
-    //MARK: - Weather
 }
 
 //MARK: - MVLLocalStoreService Protocol
@@ -172,41 +154,6 @@ extension MVLLocalStoreServiceCoreDataImpl: MVLLocalStoreService {
     func removeAllSearchKeys(completion: @escaping (LocalStoreResponse<Bool>) -> Void) {
         MagicalRecord.save(blockAndWait: { ctx in
             MVLLocalStoreSearchKey.mr_truncateAll(in: ctx)
-            completion(.success(responseData: true))
-        })
-    }
-    
-    //MARK: - Old source code
-    func loadCoordinates(completion: @escaping (LocalStoreResponse<[MVLCoordinate]>) -> Void) {
-        if let coordinateEntities = MVLLocalStoreCoordinate.mr_findAllSorted(by: "c_name", ascending: true) as? [MVLLocalStoreCoordinate] {
-            completion(.success(responseData: coordinateEntities))
-        }
-        else {
-            completion(.failure(nil))
-        }
-    }
-    
-    func saveCoordinate(coordinate: MVLCoordinate, completion: @escaping (LocalStoreResponse<MVLCoordinate?>) -> Void) {
-        var entity: MVLLocalStoreCoordinate?
-        MagicalRecord.save({ (ctx) in
-            entity = MVLLocalStoreCoordinate.mr_createEntity(in: ctx)
-            entity?.c_name = coordinate.name
-            entity?.c_aqi = NSNumber(value: coordinate.aqi)
-            entity?.c_lat = NSNumber(value: coordinate.lat)
-            entity?.c_long = NSNumber(value: coordinate.long)
-        }) { (succeed, error) in
-            if succeed, let ett = entity {
-                completion(.success(responseData: ett))
-            }
-            else {
-                completion(.failure(error))
-            }
-        }
-    }
-    
-    func removeAllSavedCoordinates(completion: @escaping (LocalStoreResponse<Bool>) -> Void) {
-        MagicalRecord.save(blockAndWait: { ctx in
-            MVLLocalStoreCoordinate.mr_truncateAll(in: ctx)
             completion(.success(responseData: true))
         })
     }

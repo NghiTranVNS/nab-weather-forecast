@@ -13,11 +13,6 @@ enum LocalStoreResponse<T> {
 }
 
 protocol MVLLocalStoreService {
-    func loadCoordinates(completion: @escaping (LocalStoreResponse<[MVLCoordinate]>) -> Void)
-    func saveCoordinate(coordinate: MVLCoordinate, completion: @escaping (LocalStoreResponse<MVLCoordinate?>) -> Void)
-    func removeAllSavedCoordinates(completion: @escaping (LocalStoreResponse<Bool>) -> Void)
-    
-    //MARK: - Weather
     func saveSearchedKey(key: MVLSearchKey, completion: @escaping (LocalStoreResponse<MVLSearchKey?>) -> Void)
     func loadSearchedKeys(completion: @escaping (LocalStoreResponse<[MVLSearchKey]>) -> Void)
     func removeSearchedKey(key: MVLSearchKey, completion: @escaping (LocalStoreResponse<Bool>) -> Void)

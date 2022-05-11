@@ -81,59 +81,8 @@
             </objects>
             <point key="canvasLocation" x="1802.8985507246377" y="314.73214285714283"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mvl" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfR-8J-Iat" customClass="MVLScreenA" customModule="mvl" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABW-I3-yFr" customClass="MVLScreenB" customModule="mvl" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnC-3K-WRo" customClass="MVLScreenC" customModule="mvl" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="qnC-3K-WRo" secondAttribute="bottom" id="0K6-rt-44g"/>
-                            <constraint firstItem="ABW-I3-yFr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="10I-FJ-l8u"/>
-                            <constraint firstAttribute="bottom" secondItem="dfR-8J-Iat" secondAttribute="bottom" id="2OF-yY-8pZ"/>
-                            <constraint firstItem="dfR-8J-Iat" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3MW-SS-zqD"/>
-                            <constraint firstItem="qnC-3K-WRo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5IJ-He-fI4"/>
-                            <constraint firstAttribute="trailing" secondItem="ABW-I3-yFr" secondAttribute="trailing" id="8E0-7n-ysg"/>
-                            <constraint firstAttribute="bottom" secondItem="ABW-I3-yFr" secondAttribute="bottom" id="CKU-Fm-5ZV"/>
-                            <constraint firstAttribute="trailing" secondItem="qnC-3K-WRo" secondAttribute="trailing" id="TJx-v8-s3C"/>
-                            <constraint firstItem="ABW-I3-yFr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dVt-On-N5J"/>
-                            <constraint firstItem="dfR-8J-Iat" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gpg-JL-ph0"/>
-                            <constraint firstItem="qnC-3K-WRo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mDV-KE-Ysp"/>
-                            <constraint firstItem="dfR-8J-Iat" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oZp-bD-Hne"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="screenA" destination="dfR-8J-Iat" id="Xqn-VP-I5N"/>
-                        <outlet property="screenB" destination="ABW-I3-yFr" id="gQE-Fl-KtG"/>
-                        <outlet property="screenC" destination="qnC-3K-WRo" id="H6c-I5-qaB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="654" y="1045"/>
-        </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

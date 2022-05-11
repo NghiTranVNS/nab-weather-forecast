@@ -65,21 +65,8 @@
 		AE7FC1B827C2D380008D9059 /* MVLLocalStoreServiceCoreDataImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7FC1B727C2D380008D9059 /* MVLLocalStoreServiceCoreDataImpl.swift */; };
 		AE7FC1B927C2D380008D9059 /* MVLLocalStoreServiceCoreDataImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7FC1B727C2D380008D9059 /* MVLLocalStoreServiceCoreDataImpl.swift */; };
 		AE7FC1BA27C2D380008D9059 /* MVLLocalStoreServiceCoreDataImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7FC1B727C2D380008D9059 /* MVLLocalStoreServiceCoreDataImpl.swift */; };
-		AE7FC1BC27C2E76C008D9059 /* MVLStoredCoordinatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7FC1BB27C2E76C008D9059 /* MVLStoredCoordinatesView.swift */; };
-		AE7FC1BD27C2E76C008D9059 /* MVLStoredCoordinatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7FC1BB27C2E76C008D9059 /* MVLStoredCoordinatesView.swift */; };
-		AE7FC1BE27C2E76C008D9059 /* MVLStoredCoordinatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7FC1BB27C2E76C008D9059 /* MVLStoredCoordinatesView.swift */; };
-		AE7FC1C027C2E779008D9059 /* MVLStoredCoordinatesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE7FC1BF27C2E779008D9059 /* MVLStoredCoordinatesView.xib */; };
-		AE7FC1C127C2E779008D9059 /* MVLStoredCoordinatesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE7FC1BF27C2E779008D9059 /* MVLStoredCoordinatesView.xib */; };
-		AE7FC1C227C2E779008D9059 /* MVLStoredCoordinatesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE7FC1BF27C2E779008D9059 /* MVLStoredCoordinatesView.xib */; };
-		AE7FC1C527C2E822008D9059 /* MVLCoordinateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7FC1C327C2E822008D9059 /* MVLCoordinateCollectionViewCell.swift */; };
-		AE7FC1C627C2E822008D9059 /* MVLCoordinateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7FC1C327C2E822008D9059 /* MVLCoordinateCollectionViewCell.swift */; };
-		AE7FC1C727C2E822008D9059 /* MVLCoordinateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7FC1C327C2E822008D9059 /* MVLCoordinateCollectionViewCell.swift */; };
-		AE7FC1C827C2E822008D9059 /* MVLCoordinateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE7FC1C427C2E822008D9059 /* MVLCoordinateCollectionViewCell.xib */; };
-		AE7FC1C927C2E822008D9059 /* MVLCoordinateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE7FC1C427C2E822008D9059 /* MVLCoordinateCollectionViewCell.xib */; };
-		AE7FC1CA27C2E822008D9059 /* MVLCoordinateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE7FC1C427C2E822008D9059 /* MVLCoordinateCollectionViewCell.xib */; };
 		AE9A7B0027BFEE720050287C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7AFF27BFEE720050287C /* AppDelegate.swift */; };
 		AE9A7B0227BFEE720050287C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B0127BFEE720050287C /* SceneDelegate.swift */; };
-		AE9A7B0427BFEE720050287C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B0327BFEE720050287C /* ViewController.swift */; };
 		AE9A7B0727BFEE720050287C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9A7B0527BFEE720050287C /* Main.storyboard */; };
 		AE9A7B0A27BFEE720050287C /* mvl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B0827BFEE720050287C /* mvl.xcdatamodeld */; };
 		AE9A7B0C27BFEE750050287C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A7B0B27BFEE750050287C /* Assets.xcassets */; };
@@ -88,31 +75,9 @@
 		AE9A7B2427BFEE760050287C /* mvlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B2327BFEE760050287C /* mvlUITests.swift */; };
 		AE9A7B2627BFEE760050287C /* mvlUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B2527BFEE760050287C /* mvlUITestsLaunchTests.swift */; };
 		AE9A7B9A27BFF33C0050287C /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B6C27BFF33C0050287C /* GlobalVariables.swift */; };
-		AE9A7BA127BFF33C0050287C /* MVLAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B7627BFF33C0050287C /* MVLAppCoordinator.swift */; };
-		AE9A7BA227BFF33C0050287C /* MVLMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B7727BFF33C0050287C /* MVLMainCoordinator.swift */; };
 		AE9A7BA327BFF33C0050287C /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B7927BFF33C0050287C /* NSObject+Ext.swift */; };
-		AE9A7BA427BFF33C0050287C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B7A27BFF33C0050287C /* BaseView.swift */; };
 		AE9A7BA627BFF33C0050287C /* MVLWebAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B7D27BFF33C0050287C /* MVLWebAPIService.swift */; };
-		AE9A7BA727BFF33C0050287C /* MVLLocalStoreCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B8027BFF33C0050287C /* MVLLocalStoreCoordinate.swift */; };
-		AE9A7BA927BFF33C0050287C /* MVLCoordinateRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B8327BFF33C0050287C /* MVLCoordinateRepositoryImpl.swift */; };
-		AE9A7BAA27BFF33C0050287C /* CloudCoordinateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B8627BFF33C0050287C /* CloudCoordinateInfo.swift */; };
-		AE9A7BAB27BFF33C0050287C /* CloudCoordinateAqi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B8727BFF33C0050287C /* CloudCoordinateAqi.swift */; };
 		AE9A7BAD27BFF33C0050287C /* MVLWebAPIServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B8927BFF33C0050287C /* MVLWebAPIServiceImpl.swift */; };
-		AE9A7BB027BFF33C0050287C /* MVLCoordinateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B8C27BFF33C0050287C /* MVLCoordinateRepository.swift */; };
-		AE9A7BB427BFF6D70050287C /* MVLCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7BB327BFF6D60050287C /* MVLCoordinate.swift */; };
-		AE9A7BB527BFF6D70050287C /* MVLCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7BB327BFF6D60050287C /* MVLCoordinate.swift */; };
-		AE9A7BB627BFF6D70050287C /* MVLCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7BB327BFF6D60050287C /* MVLCoordinate.swift */; };
-		AE9A7BBB27C000000050287C /* MVLScreenA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7BBA27C000000050287C /* MVLScreenA.swift */; };
-		AE9A7BBC27C000000050287C /* MVLScreenA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7BBA27C000000050287C /* MVLScreenA.swift */; };
-		AE9A7BBD27C000000050287C /* MVLScreenA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7BBA27C000000050287C /* MVLScreenA.swift */; };
-		AE9A7BBF27C0001C0050287C /* MVLScreenA.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9A7BBE27C0001C0050287C /* MVLScreenA.xib */; };
-		AE9A7BC127C000320050287C /* MVLScreenB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7BC027C000320050287C /* MVLScreenB.swift */; };
-		AE9A7BC327C0003F0050287C /* MVLScreenC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7BC227C0003F0050287C /* MVLScreenC.swift */; };
-		AE9A7BC527C000E80050287C /* MVLScreenB.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9A7BC427C000E80050287C /* MVLScreenB.xib */; };
-		AE9A7BC727C000F20050287C /* MVLScreenC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9A7BC627C000F20050287C /* MVLScreenC.xib */; };
-		AE9A7BD127C015710050287C /* MVLMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7BD027C015710050287C /* MVLMapManager.swift */; };
-		AE9A7BD327C022630050287C /* MVLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7BD227C022630050287C /* MVLViewModel.swift */; };
-		AE9A7BDD27C0308C0050287C /* MVLLocationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7BDC27C0308C0050287C /* MVLLocationsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,14 +120,9 @@
 		AA25BC5B5E1565A0B7A03E09 /* Pods-mvl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvl.release.xcconfig"; path = "Target Support Files/Pods-mvl/Pods-mvl.release.xcconfig"; sourceTree = "<group>"; };
 		AE7FC1B327C2D0FF008D9059 /* MVLLocalStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLLocalStoreService.swift; sourceTree = "<group>"; };
 		AE7FC1B727C2D380008D9059 /* MVLLocalStoreServiceCoreDataImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLLocalStoreServiceCoreDataImpl.swift; sourceTree = "<group>"; };
-		AE7FC1BB27C2E76C008D9059 /* MVLStoredCoordinatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLStoredCoordinatesView.swift; sourceTree = "<group>"; };
-		AE7FC1BF27C2E779008D9059 /* MVLStoredCoordinatesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVLStoredCoordinatesView.xib; sourceTree = "<group>"; };
-		AE7FC1C327C2E822008D9059 /* MVLCoordinateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLCoordinateCollectionViewCell.swift; sourceTree = "<group>"; };
-		AE7FC1C427C2E822008D9059 /* MVLCoordinateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVLCoordinateCollectionViewCell.xib; sourceTree = "<group>"; };
 		AE9A7AFC27BFEE720050287C /* mvl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A7AFF27BFEE720050287C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9A7B0127BFEE720050287C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AE9A7B0327BFEE720050287C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE9A7B0627BFEE720050287C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE9A7B0927BFEE720050287C /* mvl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mvl.xcdatamodel; sourceTree = "<group>"; };
 		AE9A7B0B27BFEE750050287C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -174,27 +134,9 @@
 		AE9A7B2327BFEE760050287C /* mvlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvlUITests.swift; sourceTree = "<group>"; };
 		AE9A7B2527BFEE760050287C /* mvlUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvlUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AE9A7B6C27BFF33C0050287C /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
-		AE9A7B7627BFF33C0050287C /* MVLAppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVLAppCoordinator.swift; sourceTree = "<group>"; };
-		AE9A7B7727BFF33C0050287C /* MVLMainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVLMainCoordinator.swift; sourceTree = "<group>"; };
 		AE9A7B7927BFF33C0050287C /* NSObject+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Ext.swift"; sourceTree = "<group>"; };
-		AE9A7B7A27BFF33C0050287C /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		AE9A7B7D27BFF33C0050287C /* MVLWebAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVLWebAPIService.swift; sourceTree = "<group>"; };
-		AE9A7B8027BFF33C0050287C /* MVLLocalStoreCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVLLocalStoreCoordinate.swift; sourceTree = "<group>"; };
-		AE9A7B8327BFF33C0050287C /* MVLCoordinateRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVLCoordinateRepositoryImpl.swift; sourceTree = "<group>"; };
-		AE9A7B8627BFF33C0050287C /* CloudCoordinateInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudCoordinateInfo.swift; sourceTree = "<group>"; };
-		AE9A7B8727BFF33C0050287C /* CloudCoordinateAqi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudCoordinateAqi.swift; sourceTree = "<group>"; };
 		AE9A7B8927BFF33C0050287C /* MVLWebAPIServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVLWebAPIServiceImpl.swift; sourceTree = "<group>"; };
-		AE9A7B8C27BFF33C0050287C /* MVLCoordinateRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVLCoordinateRepository.swift; sourceTree = "<group>"; };
-		AE9A7BB327BFF6D60050287C /* MVLCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLCoordinate.swift; sourceTree = "<group>"; };
-		AE9A7BBA27C000000050287C /* MVLScreenA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLScreenA.swift; sourceTree = "<group>"; };
-		AE9A7BBE27C0001C0050287C /* MVLScreenA.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVLScreenA.xib; sourceTree = "<group>"; };
-		AE9A7BC027C000320050287C /* MVLScreenB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLScreenB.swift; sourceTree = "<group>"; };
-		AE9A7BC227C0003F0050287C /* MVLScreenC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLScreenC.swift; sourceTree = "<group>"; };
-		AE9A7BC427C000E80050287C /* MVLScreenB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVLScreenB.xib; sourceTree = "<group>"; };
-		AE9A7BC627C000F20050287C /* MVLScreenC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVLScreenC.xib; sourceTree = "<group>"; };
-		AE9A7BD027C015710050287C /* MVLMapManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVLMapManager.swift; sourceTree = "<group>"; };
-		AE9A7BD227C022630050287C /* MVLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLViewModel.swift; sourceTree = "<group>"; };
-		AE9A7BDC27C0308C0050287C /* MVLLocationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVLLocationsManager.swift; sourceTree = "<group>"; };
 		C8EFED5EFE588E50BFFA0618 /* Pods_mvl_mvlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvl_mvlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3FD35DD1AF2FA37F6095E9 /* Pods_mvl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE50A769BFF7FD4CA527320E /* Pods_mvlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -302,7 +244,6 @@
 				AE9A7B7227BFF33C0050287C /* Models */,
 				AE9A7B5A27BFF33C0050287C /* Views */,
 				AE9A7B6D27BFF33C0050287C /* ViewModels */,
-				AE9A7B7527BFF33C0050287C /* AppCoordinators */,
 				AE9A7B7C27BFF33C0050287C /* Reposistories */,
 				AE7FC1B227C2C92F008D9059 /* Services */,
 				AE9A7B7827BFF33C0050287C /* Utilities */,
@@ -338,10 +279,6 @@
 			isa = PBXGroup;
 			children = (
 				5632415A282834BA00F75E8F /* Weather */,
-				AE9A7BB727BFFF9B0050287C /* ScreenA */,
-				AE9A7BB827BFFFA80050287C /* ScreenB */,
-				AE9A7BB927BFFFB00050287C /* ScreenC */,
-				AE9A7B0327BFEE720050287C /* ViewController.swift */,
 				563241462828252400F75E8F /* MVLNavigationViewController.swift */,
 				5632414E2828293800F75E8F /* MVLWeatherForcastViewController.swift */,
 			);
@@ -351,8 +288,6 @@
 		AE9A7B6B27BFF33C0050287C /* GlobalDefinitions */ = {
 			isa = PBXGroup;
 			children = (
-				AE9A7BDC27C0308C0050287C /* MVLLocationsManager.swift */,
-				AE9A7BD027C015710050287C /* MVLMapManager.swift */,
 				AE9A7B6C27BFF33C0050287C /* GlobalVariables.swift */,
 			);
 			path = GlobalDefinitions;
@@ -361,7 +296,6 @@
 		AE9A7B6D27BFF33C0050287C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				AE9A7BD227C022630050287C /* MVLViewModel.swift */,
 				5632415B28283DC000F75E8F /* MVLWeatherViewModel.swift */,
 			);
 			path = ViewModels;
@@ -370,27 +304,16 @@
 		AE9A7B7227BFF33C0050287C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE9A7BB327BFF6D60050287C /* MVLCoordinate.swift */,
 				563241022827D31100F75E8F /* MVLWeather.swift */,
 				563241062827DD3800F75E8F /* MVLSearchKey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		AE9A7B7527BFF33C0050287C /* AppCoordinators */ = {
-			isa = PBXGroup;
-			children = (
-				AE9A7B7627BFF33C0050287C /* MVLAppCoordinator.swift */,
-				AE9A7B7727BFF33C0050287C /* MVLMainCoordinator.swift */,
-			);
-			path = AppCoordinators;
-			sourceTree = "<group>";
-		};
 		AE9A7B7827BFF33C0050287C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				AE9A7B7927BFF33C0050287C /* NSObject+Ext.swift */,
-				AE9A7B7A27BFF33C0050287C /* BaseView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -398,8 +321,6 @@
 		AE9A7B7C27BFF33C0050287C /* Reposistories */ = {
 			isa = PBXGroup;
 			children = (
-				AE9A7B8C27BFF33C0050287C /* MVLCoordinateRepository.swift */,
-				AE9A7B8327BFF33C0050287C /* MVLCoordinateRepositoryImpl.swift */,
 				5632415D2828417800F75E8F /* MVLWeatherRepository.swift */,
 				56324161282841B000F75E8F /* MVLWeatherRepositoryImpl.swift */,
 			);
@@ -425,7 +346,6 @@
 				5632410E2827DEC500F75E8F /* MVLLocalStoreSearchKey.swift */,
 				563241342828031B00F75E8F /* MVLLocalStoreSearchKey+CoreDataClass.swift */,
 				563241322828031B00F75E8F /* MVLLocalStoreSearchKey+CoreDataProperties.swift */,
-				AE9A7B8027BFF33C0050287C /* MVLLocalStoreCoordinate.swift */,
 			);
 			path = CoreDataEntities;
 			sourceTree = "<group>";
@@ -442,43 +362,10 @@
 		AE9A7B8527BFF33C0050287C /* CloudEntities */ = {
 			isa = PBXGroup;
 			children = (
-				AE9A7B8627BFF33C0050287C /* CloudCoordinateInfo.swift */,
-				AE9A7B8727BFF33C0050287C /* CloudCoordinateAqi.swift */,
 				564BDD29282C2B810080E576 /* MVLCloudSearchKey.swift */,
 				564BDD2D282C2C020080E576 /* MVLCloudWeather.swift */,
 			);
 			path = CloudEntities;
-			sourceTree = "<group>";
-		};
-		AE9A7BB727BFFF9B0050287C /* ScreenA */ = {
-			isa = PBXGroup;
-			children = (
-				AE9A7BBA27C000000050287C /* MVLScreenA.swift */,
-				AE9A7BBE27C0001C0050287C /* MVLScreenA.xib */,
-			);
-			path = ScreenA;
-			sourceTree = "<group>";
-		};
-		AE9A7BB827BFFFA80050287C /* ScreenB */ = {
-			isa = PBXGroup;
-			children = (
-				AE9A7BC027C000320050287C /* MVLScreenB.swift */,
-				AE9A7BC427C000E80050287C /* MVLScreenB.xib */,
-				AE7FC1BB27C2E76C008D9059 /* MVLStoredCoordinatesView.swift */,
-				AE7FC1BF27C2E779008D9059 /* MVLStoredCoordinatesView.xib */,
-				AE7FC1C327C2E822008D9059 /* MVLCoordinateCollectionViewCell.swift */,
-				AE7FC1C427C2E822008D9059 /* MVLCoordinateCollectionViewCell.xib */,
-			);
-			path = ScreenB;
-			sourceTree = "<group>";
-		};
-		AE9A7BB927BFFFB00050287C /* ScreenC */ = {
-			isa = PBXGroup;
-			children = (
-				AE9A7BC227C0003F0050287C /* MVLScreenC.swift */,
-				AE9A7BC627C000F20050287C /* MVLScreenC.xib */,
-			);
-			path = ScreenC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -593,15 +480,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE9A7BC527C000E80050287C /* MVLScreenB.xib in Resources */,
 				56324157282834A400F75E8F /* MVLWeatherTableViewCell.xib in Resources */,
 				AE9A7B0F27BFEE750050287C /* LaunchScreen.storyboard in Resources */,
-				AE7FC1C827C2E822008D9059 /* MVLCoordinateCollectionViewCell.xib in Resources */,
 				AE9A7B0C27BFEE750050287C /* Assets.xcassets in Resources */,
-				AE9A7BC727C000F20050287C /* MVLScreenC.xib in Resources */,
-				AE7FC1C027C2E779008D9059 /* MVLStoredCoordinatesView.xib in Resources */,
 				AE9A7B0727BFEE720050287C /* Main.storyboard in Resources */,
-				AE9A7BBF27C0001C0050287C /* MVLScreenA.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,9 +491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE7FC1C927C2E822008D9059 /* MVLCoordinateCollectionViewCell.xib in Resources */,
 				56324158282834A400F75E8F /* MVLWeatherTableViewCell.xib in Resources */,
-				AE7FC1C127C2E779008D9059 /* MVLStoredCoordinatesView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,9 +499,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE7FC1CA27C2E822008D9059 /* MVLCoordinateCollectionViewCell.xib in Resources */,
 				56324159282834A400F75E8F /* MVLWeatherTableViewCell.xib in Resources */,
-				AE7FC1C227C2E779008D9059 /* MVLStoredCoordinatesView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,47 +648,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE9A7BA627BFF33C0050287C /* MVLWebAPIService.swift in Sources */,
-				AE9A7BDD27C0308C0050287C /* MVLLocationsManager.swift in Sources */,
 				AE9A7BA327BFF33C0050287C /* NSObject+Ext.swift in Sources */,
-				AE9A7BC127C000320050287C /* MVLScreenB.swift in Sources */,
-				AE9A7BA227BFF33C0050287C /* MVLMainCoordinator.swift in Sources */,
-				AE9A7BB427BFF6D70050287C /* MVLCoordinate.swift in Sources */,
 				5632410B2827DE7900F75E8F /* MVLLocalStoreWeather.swift in Sources */,
 				563241072827DD3800F75E8F /* MVLSearchKey.swift in Sources */,
 				5632410F2827DEC500F75E8F /* MVLLocalStoreSearchKey.swift in Sources */,
 				5632413C2828031B00F75E8F /* MVLLocalStoreSearchKey+CoreDataClass.swift in Sources */,
 				AE9A7B9A27BFF33C0050287C /* GlobalVariables.swift in Sources */,
-				AE9A7BC327C0003F0050287C /* MVLScreenC.swift in Sources */,
 				564BDD2A282C2B810080E576 /* MVLCloudSearchKey.swift in Sources */,
 				563241362828031B00F75E8F /* MVLLocalStoreSearchKey+CoreDataProperties.swift in Sources */,
-				AE9A7BD127C015710050287C /* MVLMapManager.swift in Sources */,
-				AE7FC1C527C2E822008D9059 /* MVLCoordinateCollectionViewCell.swift in Sources */,
 				563241032827D31100F75E8F /* MVLWeather.swift in Sources */,
 				AE7FC1B827C2D380008D9059 /* MVLLocalStoreServiceCoreDataImpl.swift in Sources */,
 				AE9A7BAD27BFF33C0050287C /* MVLWebAPIServiceImpl.swift in Sources */,
-				AE9A7BA127BFF33C0050287C /* MVLAppCoordinator.swift in Sources */,
 				5632414F2828293800F75E8F /* MVLWeatherForcastViewController.swift in Sources */,
 				564BDD2E282C2C020080E576 /* MVLCloudWeather.swift in Sources */,
 				563241472828252400F75E8F /* MVLNavigationViewController.swift in Sources */,
-				AE9A7BB027BFF33C0050287C /* MVLCoordinateRepository.swift in Sources */,
-				AE9A7BBB27C000000050287C /* MVLScreenA.swift in Sources */,
-				AE9A7B0427BFEE720050287C /* ViewController.swift in Sources */,
-				AE9A7BAB27BFF33C0050287C /* CloudCoordinateAqi.swift in Sources */,
-				AE9A7BD327C022630050287C /* MVLViewModel.swift in Sources */,
 				5632413F2828031B00F75E8F /* MVLLocalStoreWeather+CoreDataProperties.swift in Sources */,
-				AE9A7BA727BFF33C0050287C /* MVLLocalStoreCoordinate.swift in Sources */,
 				56324162282841B000F75E8F /* MVLWeatherRepositoryImpl.swift in Sources */,
-				AE7FC1BC27C2E76C008D9059 /* MVLStoredCoordinatesView.swift in Sources */,
 				AE9A7B0027BFEE720050287C /* AppDelegate.swift in Sources */,
-				AE9A7BA927BFF33C0050287C /* MVLCoordinateRepositoryImpl.swift in Sources */,
 				AE9A7B0227BFEE720050287C /* SceneDelegate.swift in Sources */,
-				AE9A7BA427BFF33C0050287C /* BaseView.swift in Sources */,
 				5632415C28283DC000F75E8F /* MVLWeatherViewModel.swift in Sources */,
 				AE9A7B0A27BFEE720050287C /* mvl.xcdatamodeld in Sources */,
 				56324154282834A400F75E8F /* MVLWeatherTableViewCell.swift in Sources */,
 				5632415E2828417800F75E8F /* MVLWeatherRepository.swift in Sources */,
 				AE7FC1B427C2D0FF008D9059 /* MVLLocalStoreService.swift in Sources */,
-				AE9A7BAA27BFF33C0050287C /* CloudCoordinateInfo.swift in Sources */,
 				563241392828031B00F75E8F /* MVLLocalStoreWeather+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -820,14 +680,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				563241482828252400F75E8F /* MVLNavigationViewController.swift in Sources */,
-				AE9A7BBC27C000000050287C /* MVLScreenA.swift in Sources */,
-				AE7FC1BD27C2E76C008D9059 /* MVLStoredCoordinatesView.swift in Sources */,
 				563241042827D31100F75E8F /* MVLWeather.swift in Sources */,
 				5632413D2828031B00F75E8F /* MVLLocalStoreSearchKey+CoreDataClass.swift in Sources */,
 				563241402828031B00F75E8F /* MVLLocalStoreWeather+CoreDataProperties.swift in Sources */,
 				564BDD2F282C2C020080E576 /* MVLCloudWeather.swift in Sources */,
 				AE7FC1B527C2D0FF008D9059 /* MVLLocalStoreService.swift in Sources */,
-				AE7FC1C627C2E822008D9059 /* MVLCoordinateCollectionViewCell.swift in Sources */,
 				56324155282834A400F75E8F /* MVLWeatherTableViewCell.swift in Sources */,
 				563241082827DD3800F75E8F /* MVLSearchKey.swift in Sources */,
 				56324163282841B000F75E8F /* MVLWeatherRepositoryImpl.swift in Sources */,
@@ -839,7 +696,6 @@
 				563241102827DEC500F75E8F /* MVLLocalStoreSearchKey.swift in Sources */,
 				563241502828293800F75E8F /* MVLWeatherForcastViewController.swift in Sources */,
 				AE9A7B1A27BFEE760050287C /* mvlTests.swift in Sources */,
-				AE9A7BB527BFF6D70050287C /* MVLCoordinate.swift in Sources */,
 				5632415F2828417800F75E8F /* MVLWeatherRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -850,8 +706,6 @@
 			files = (
 				564BDD2C282C2B810080E576 /* MVLCloudSearchKey.swift in Sources */,
 				AE7FC1BA27C2D380008D9059 /* MVLLocalStoreServiceCoreDataImpl.swift in Sources */,
-				AE9A7BB627BFF6D70050287C /* MVLCoordinate.swift in Sources */,
-				AE9A7BBD27C000000050287C /* MVLScreenA.swift in Sources */,
 				AE9A7B2627BFEE760050287C /* mvlUITestsLaunchTests.swift in Sources */,
 				AE7FC1B627C2D0FF008D9059 /* MVLLocalStoreService.swift in Sources */,
 				563241092827DD3800F75E8F /* MVLSearchKey.swift in Sources */,
@@ -863,12 +717,10 @@
 				563241412828031B00F75E8F /* MVLLocalStoreWeather+CoreDataProperties.swift in Sources */,
 				5632410D2827DE7900F75E8F /* MVLLocalStoreWeather.swift in Sources */,
 				56324164282841B000F75E8F /* MVLWeatherRepositoryImpl.swift in Sources */,
-				AE7FC1C727C2E822008D9059 /* MVLCoordinateCollectionViewCell.swift in Sources */,
 				563241382828031B00F75E8F /* MVLLocalStoreSearchKey+CoreDataProperties.swift in Sources */,
 				56324156282834A400F75E8F /* MVLWeatherTableViewCell.swift in Sources */,
 				563241602828417800F75E8F /* MVLWeatherRepository.swift in Sources */,
 				564BDD30282C2C020080E576 /* MVLCloudWeather.swift in Sources */,
-				AE7FC1BE27C2E76C008D9059 /* MVLStoredCoordinatesView.swift in Sources */,
 				563241492828252400F75E8F /* MVLNavigationViewController.swift in Sources */,
 				563241112827DEC500F75E8F /* MVLLocalStoreSearchKey.swift in Sources */,
 			);
