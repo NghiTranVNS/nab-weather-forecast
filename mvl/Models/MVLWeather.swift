@@ -27,7 +27,7 @@ extension MVLWeather {
     }
 
     func temperatureDescription() -> String {
-        let tempStr = "Average Temperature: \(self.temp)°C"
+        let tempStr = String(format: "Average Temperature: %.1f°C", temp)
         return tempStr
     }
 

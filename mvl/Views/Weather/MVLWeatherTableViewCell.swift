@@ -48,7 +48,7 @@ extension MVLWeatherTableViewCell {
         humidityLabel.text = weather.humidityDescription()
         descriptionLabel.text = weather.shortDescription()
         
-        //TODO: Download Image for icon
-//        iconImageView.kf.setImage(with: URL("???????"))
+        //http://openweathermap.org/img/wn/10d@2x.png
+        iconImageView.kf.setImage(with: URL(string: "http://openweathermap.org/img/wn/\(weather.icon)@2x.png"))
     }
 }
