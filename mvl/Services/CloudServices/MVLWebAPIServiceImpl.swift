@@ -44,7 +44,7 @@ class MVLWebAPIServiceImpl: MVLWebAPIService {
                     let jsonDictionary = json as? [String : Any] {
                     let key = Mapper<MVLCloudSearchKey>().map(JSON: jsonDictionary)
                     key?.key = city
-                    completion(.success(responseData: key as? MVLSearchKey))
+                    completion(.success(responseData: key))
                 } else {
                     completion(.failure(NSError(domain:"", code: 0, userInfo: nil)))
                 }

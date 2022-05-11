@@ -18,7 +18,6 @@ class MVLWeatherViewModel: Reactor {
     // Action is an user interaction
     enum Action {
         case loadLocalSearchedKeys
-        case retrieveLocalSearchedKeys(String)
         case searchWithKey(String)
         case fetchWeatherInfoWithSearchString(String)
         case cancelSearching
@@ -32,7 +31,6 @@ class MVLWeatherViewModel: Reactor {
     // Mutate is a state manipulator which is not exposed to a view
     enum Mutation {
         case loadedLatestcurrentKeys([MVLSearchKey])
-//        case fetchWeatherInfoWithSearchString(String)
         case searchWithKey(String)
         case cancelSearching
         case updateSearchString(String)
@@ -77,8 +75,6 @@ class MVLWeatherViewModel: Reactor {
                 return Mutation.loadedLatestcurrentKeys(keys)
             })
           ])
-      case .retrieveLocalSearchedKeys(_):
-          break
       case .searchWithKey(let keyString):
           if keyString.count < GlobalVariables.minLengthOfKeyString {
               return Observable.just(Mutation.setAlertMessage("The search term length must be from 3 characters or above."))
@@ -139,13 +135,6 @@ class MVLWeatherViewModel: Reactor {
             }
           ])
       }
-        
-        //test
-        return Observable.concat([
-            Observable.just(Mutation.setIsLoadingWeatherInfo(true)),
-            Observable.just(Mutation.setAlertMessage("Testing error message"))
-        ])
-            //
     }
 
     // Mutation -> State

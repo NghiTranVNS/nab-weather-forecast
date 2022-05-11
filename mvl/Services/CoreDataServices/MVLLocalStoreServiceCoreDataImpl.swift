@@ -11,8 +11,20 @@ import MagicalRecord
 class MVLLocalStoreServiceCoreDataImpl {
     init() {
         configureCoreDataStack()
-
-        //Generate data for testing
+        
+        //The code below is just for demo purpose. We should cho clean up local DB in real product
+        //Clean up local DB
+        removeAllSearchKeys { result in
+            switch result {
+            case .failure(_):
+                print("Failed to clean local DB")
+            case .success(responseData: _):
+                print("Cleaned local DB")
+            }
+        }
+        
+        
+        /* Generate mock data for testing
         let isMockDataGeneratedKey = "isMockDataGenerated"
         let userDefaultd = UserDefaults.standard
         if userDefaultd.bool(forKey: isMockDataGeneratedKey) == false {
@@ -21,6 +33,7 @@ class MVLLocalStoreServiceCoreDataImpl {
             userDefaultd.synchronize()
         }
         else {
+            //Delete mack data for testing
             self.loadSearchedKeys { result in
                 switch result {
                 case .failure(_):
@@ -35,25 +48,26 @@ class MVLLocalStoreServiceCoreDataImpl {
                         print("\n")
                     }
                     
-//                    if let lastKey = responseData.last {
-//                        self.removeSearchedKeys(keys: [lastKey]) { result in
-//                            switch result {
-//                            case .failure(_):
-//                                print("Failed to delete mock data in CoreData: \(lastKey.key)")
-//                            case .success(responseData: let responseData):
-//                                print("Successfully delete mock data in CoreData: \(lastKey.key)")
-//                            }
-//                        }
-//                        
-//                        print("Number of remaining Weather objects: \(MVLLocalStoreWeather.mr_numberOfEntities())")
-//                    }
-//                    else {
-//                        userDefaultd.set(false, forKey: isMockDataGeneratedKey)
-//                        userDefaultd.synchronize()
-//                    }
+                    if let lastKey = responseData.last {
+                        self.removeSearchedKeys(keys: [lastKey]) { result in
+                            switch result {
+                            case .failure(_):
+                                print("Failed to delete mock data in CoreData: \(lastKey.key)")
+                            case .success(responseData: let responseData):
+                                print("Successfully delete mock data in CoreData: \(lastKey.key)")
+                            }
+                        }
+                        
+                        print("Number of remaining Weather objects: \(MVLLocalStoreWeather.mr_numberOfEntities())")
+                    }
+                    else {
+                        userDefaultd.set(false, forKey: isMockDataGeneratedKey)
+                        userDefaultd.synchronize()
+                    }
                 }
             }
         }
+         */
     }
 
     //MARK: - Insert mock data for testing
