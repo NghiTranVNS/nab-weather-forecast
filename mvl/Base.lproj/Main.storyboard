@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ph3-pz-KoQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation View Controller-->
+        <scene sceneID="akR-so-rgx">
+            <objects>
+                <navigationController id="ph3-pz-KoQ" customClass="MVLNavigationViewController" customModule="mvl" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TxW-AF-81R">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6ko-vl-EvW" kind="relationship" relationship="rootViewController" id="IWw-hg-7Kb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6DQ-OE-DPq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="639" y="315"/>
+        </scene>
+        <!--Weather Forecast-->
+        <scene sceneID="9um-nb-6PC">
+            <objects>
+                <viewController id="6ko-vl-EvW" customClass="MVLWeatherForcastViewController" customModule="mvl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Air-IR-VFD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DcD-hA-1SA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="224" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FL0-tS-puI">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ik-FD-d4F">
+                                <rect key="frame" x="0.0" y="139" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="uyv-Jo-Tgs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9F9-lI-1zw"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4ik-FD-d4F" firstAttribute="top" secondItem="DcD-hA-1SA" secondAttribute="bottom" id="3LO-ya-PHB"/>
+                            <constraint firstItem="4ik-FD-d4F" firstAttribute="trailing" secondItem="9F9-lI-1zw" secondAttribute="trailing" id="4rd-7O-Bd0"/>
+                            <constraint firstItem="DcD-hA-1SA" firstAttribute="trailing" secondItem="9F9-lI-1zw" secondAttribute="trailing" id="DXJ-EX-S9d"/>
+                            <constraint firstAttribute="bottom" secondItem="FL0-tS-puI" secondAttribute="bottom" id="EXG-it-NKd"/>
+                            <constraint firstItem="DcD-hA-1SA" firstAttribute="leading" secondItem="9F9-lI-1zw" secondAttribute="leading" id="Lzw-Ui-emp"/>
+                            <constraint firstItem="4ik-FD-d4F" firstAttribute="leading" secondItem="9F9-lI-1zw" secondAttribute="leading" id="RGs-3l-g11"/>
+                            <constraint firstItem="FL0-tS-puI" firstAttribute="leading" secondItem="9F9-lI-1zw" secondAttribute="leading" id="TTc-jj-Axk"/>
+                            <constraint firstItem="FL0-tS-puI" firstAttribute="trailing" secondItem="9F9-lI-1zw" secondAttribute="trailing" id="oHC-dc-XOm"/>
+                            <constraint firstItem="DcD-hA-1SA" firstAttribute="top" secondItem="9F9-lI-1zw" secondAttribute="top" id="w1D-S7-wfv"/>
+                            <constraint firstItem="FL0-tS-puI" firstAttribute="top" secondItem="4ik-FD-d4F" secondAttribute="bottom" id="yqe-Ar-Rdt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Weather Forecast" id="ZXk-kH-Rot"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="searchBar" destination="DcD-hA-1SA" id="n3N-EG-oLq"/>
+                        <outlet property="tableViewBottomConstraint" destination="EXG-it-NKd" id="8LT-ee-Q6a"/>
+                        <outlet property="weatherTableView" destination="FL0-tS-puI" id="sGT-5H-ukb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SAk-LD-Pd1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802.8985507246377" y="314.73214285714283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mvl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfR-8J-Iat" customClass="MVLScreenA" customModule="mvl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABW-I3-yFr" customClass="MVLScreenB" customModule="mvl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnC-3K-WRo" customClass="MVLScreenC" customModule="mvl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qnC-3K-WRo" secondAttribute="bottom" id="0K6-rt-44g"/>
+                            <constraint firstItem="ABW-I3-yFr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="10I-FJ-l8u"/>
+                            <constraint firstAttribute="bottom" secondItem="dfR-8J-Iat" secondAttribute="bottom" id="2OF-yY-8pZ"/>
+                            <constraint firstItem="dfR-8J-Iat" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3MW-SS-zqD"/>
+                            <constraint firstItem="qnC-3K-WRo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5IJ-He-fI4"/>
+                            <constraint firstAttribute="trailing" secondItem="ABW-I3-yFr" secondAttribute="trailing" id="8E0-7n-ysg"/>
+                            <constraint firstAttribute="bottom" secondItem="ABW-I3-yFr" secondAttribute="bottom" id="CKU-Fm-5ZV"/>
+                            <constraint firstAttribute="trailing" secondItem="qnC-3K-WRo" secondAttribute="trailing" id="TJx-v8-s3C"/>
+                            <constraint firstItem="ABW-I3-yFr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dVt-On-N5J"/>
+                            <constraint firstItem="dfR-8J-Iat" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gpg-JL-ph0"/>
+                            <constraint firstItem="qnC-3K-WRo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mDV-KE-Ysp"/>
+                            <constraint firstItem="dfR-8J-Iat" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oZp-bD-Hne"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="screenA" destination="dfR-8J-Iat" id="Xqn-VP-I5N"/>
+                        <outlet property="screenB" destination="ABW-I3-yFr" id="gQE-Fl-KtG"/>
+                        <outlet property="screenC" destination="qnC-3K-WRo" id="H6c-I5-qaB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="1045"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

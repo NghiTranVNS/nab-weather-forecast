@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MVLScreenA" customModule="mvl" customModuleProvider="target">
+            <connections>
+                <outlet property="clearButton" destination="iuy-ph-5NH" id="kgf-9E-Y4X"/>
+                <outlet property="pointALabel" destination="cMZ-dH-2gN" id="hb9-tQ-grd"/>
+                <outlet property="pointBLabel" destination="Cpv-ea-J2o" id="Ohx-a7-uVr"/>
+                <outlet property="setPointAButton" destination="SZs-kW-3h6" id="auZ-UM-JlT"/>
+                <outlet property="setPointBButton" destination="sVk-T8-WFo" id="H4X-oD-h2a"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZs-kW-3h6">
+                    <rect key="frame" x="20" y="132" width="120" height="31"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="85d-T4-UG9"/>
+                        <constraint firstAttribute="width" constant="120" id="ooJ-D5-th0"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Set point A"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdT-uz-lJc">
+                    <rect key="frame" x="152.5" y="44" width="109" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMZ-dH-2gN">
+                    <rect key="frame" x="156" y="117" width="238" height="61"/>
+                    <string key="text">Lat-Long:
+Name:
+Aqi:</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpv-ea-J2o">
+                    <rect key="frame" x="156" y="216" width="238" height="61"/>
+                    <string key="text">Lat-Long:
+Name:
+Aqi:</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVk-T8-WFo">
+                    <rect key="frame" x="20" y="231" width="120" height="31"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="Lnp-tW-yPG"/>
+                        <constraint firstAttribute="width" constant="120" id="etr-k2-wA4"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Set point B"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuy-ph-5NH">
+                    <rect key="frame" x="20" y="330" width="120" height="31"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="FGS-y3-W4p"/>
+                        <constraint firstAttribute="height" constant="31" id="v7B-M6-ofn"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="sVk-T8-WFo" firstAttribute="top" secondItem="SZs-kW-3h6" secondAttribute="bottom" constant="68" id="0n3-Wa-KIH"/>
+                <constraint firstItem="tdT-uz-lJc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1ny-Oy-GTM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Cpv-ea-J2o" secondAttribute="trailing" constant="20" id="EWI-3v-U2B"/>
+                <constraint firstItem="iuy-ph-5NH" firstAttribute="top" secondItem="sVk-T8-WFo" secondAttribute="bottom" constant="68" id="GXI-F1-cC1"/>
+                <constraint firstItem="SZs-kW-3h6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Jfj-7d-5G6"/>
+                <constraint firstItem="cMZ-dH-2gN" firstAttribute="centerY" secondItem="SZs-kW-3h6" secondAttribute="centerY" id="MjB-NU-Ahf"/>
+                <constraint firstItem="iuy-ph-5NH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="OLf-Or-DrU"/>
+                <constraint firstItem="Cpv-ea-J2o" firstAttribute="centerY" secondItem="sVk-T8-WFo" secondAttribute="centerY" id="PpQ-Xr-9yR"/>
+                <constraint firstItem="tdT-uz-lJc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="UWk-5c-UlW"/>
+                <constraint firstItem="sVk-T8-WFo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ktK-Cy-nJ1"/>
+                <constraint firstItem="cMZ-dH-2gN" firstAttribute="leading" secondItem="SZs-kW-3h6" secondAttribute="trailing" constant="16" id="kzX-MV-ctD"/>
+                <constraint firstItem="SZs-kW-3h6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="88" id="lCi-4U-pBe"/>
+                <constraint firstItem="Cpv-ea-J2o" firstAttribute="leading" secondItem="sVk-T8-WFo" secondAttribute="trailing" constant="16" id="laJ-di-CXz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cMZ-dH-2gN" secondAttribute="trailing" constant="20" id="t6b-Tv-hWA"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="92.410714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

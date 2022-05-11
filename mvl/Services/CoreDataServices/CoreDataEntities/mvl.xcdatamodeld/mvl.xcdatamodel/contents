@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MVLLocalStoreCoordinate" representedClassName=".MVLLocalStoreCoordinate" syncable="YES">
+        <attribute name="c_aqi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="c_lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="c_long" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="c_name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="MVLLocalStoreSearchKey" representedClassName=".MVLLocalStoreSearchKey" syncable="YES">
+        <attribute name="k_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="k_key" optional="YES" attributeType="String"/>
+        <relationship name="k_weathers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MVLLocalStoreWeather" inverseName="w_key" inverseEntity="MVLLocalStoreWeather"/>
+    </entity>
+    <entity name="MVLLocalStoreWeather" representedClassName=".MVLLocalStoreWeather" syncable="YES">
+        <attribute name="w_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="w_descrpt" optional="YES" attributeType="String"/>
+        <attribute name="w_humidity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="w_icon" optional="YES" attributeType="String"/>
+        <attribute name="w_pressure" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="w_temp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="w_key" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MVLLocalStoreSearchKey" inverseName="k_weathers" inverseEntity="MVLLocalStoreSearchKey"/>
+    </entity>
+    <elements>
+        <element name="MVLLocalStoreCoordinate" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="MVLLocalStoreSearchKey" positionX="-54" positionY="63" width="128" height="74"/>
+        <element name="MVLLocalStoreWeather" positionX="-63" positionY="9" width="128" height="134"/>
+    </elements>
+</model>
