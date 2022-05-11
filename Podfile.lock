@@ -1,17 +1,10 @@
 PODS:
   - Alamofire (5.6.1)
-  - GoogleMaps (5.1.0):
-    - GoogleMaps/Maps (= 5.1.0)
-  - GoogleMaps/Base (5.1.0)
-  - GoogleMaps/Maps (5.1.0):
-    - GoogleMaps/Base
-  - GooglePlaces (6.2.0)
   - Kingfisher (7.2.1)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
   - ObjectMapper (4.2.0)
-  - ProgressHUD (13.6)
   - ReactorKit (3.2.0):
     - RxSwift (~> 6.0)
     - WeakMapTable (~> 1.1)
@@ -21,53 +14,40 @@ PODS:
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
-  - SnapKit (5.6.0)
   - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.1)
-  - GoogleMaps (= 5.1.0)
-  - GooglePlaces
   - Kingfisher
   - MagicalRecord
   - ObjectMapper
-  - ProgressHUD
   - ReactorKit
   - RxCocoa (~> 6.0)
   - RxSwift (~> 6.0)
-  - SnapKit
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - GoogleMaps
-    - GooglePlaces
     - Kingfisher
     - MagicalRecord
     - ObjectMapper
-    - ProgressHUD
     - ReactorKit
     - RxCocoa
     - RxRelay
     - RxSwift
-    - SnapKit
     - WeakMapTable
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
-  GoogleMaps: 086ae1dab659eaa7339bdb30fc88e2f44e7c597c
-  GooglePlaces: 53ce075bac2ea015afbd6577f47d186426a3a388
   Kingfisher: 7c084bebf7d548c623ad41bcf765fb200efed369
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
-  ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
   ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
-  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: ebf420adb181618eb9ac51a6d65727feb18559c9
+PODFILE CHECKSUM: e350eb17605d4c8c37238b794265b8303be59490
 
 COCOAPODS: 1.11.3

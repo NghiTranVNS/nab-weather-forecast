@@ -5,18 +5,9 @@ def sharedpods
     pod 'ObjectMapper'
     pod "MagicalRecord"
     pod 'Alamofire', '~> 5.1'
-    #pod 'AlamofireNetworkActivityIndicator', '~> 3.1'
-    #pod 'AlamofireImage', '~> 4.1'
-    #pod 'OHHTTPStubs'
-    #pod 'OHHTTPStubs/Swift'
-    pod 'ProgressHUD'
     pod 'ReactorKit'
     pod 'RxSwift', '~> 6.0'
     pod 'RxCocoa', '~> 6.0'
-    #pod 'RxCoreLocation'
-    pod 'GooglePlaces'
-    pod 'GoogleMaps', '5.1.0'
-    pod 'SnapKit'
     pod 'Kingfisher'
 end
 
