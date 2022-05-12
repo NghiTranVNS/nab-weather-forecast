@@ -6,6 +6,7 @@ This is the iOS demo source code for my iOS Development Challenge at NAB. Follow
 #### [Supported] 2. Design app's architecture (recommend VIPER or MVP, MVVM but not mandatory)
   - I apply MVVM combine with Clean Architecture
   - Also use Dependency Injecction to virtualize model, repository, service
+  - For UI state hander, I apply Flux and React programming. See the ReactorKit github: https://github.com/ReactorKit/ReactorKit
 #### [Supported] 3. UI should be looks like in attachment.
 #### [Supported] 4. Write UnitTests
   - Just write a mock repository to test the local store service
