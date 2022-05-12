@@ -15,6 +15,8 @@ This is the iOS demo source code for my iOS Development Challenge at NAB. Follow
 #### [Supported] 6. Exception handling
 #### [Supported] 7. Caching handling
   - Aplly Core Data to caching
+  - I clean Local Database (CoreData) everytime launching a new section (kill app the re-launch) for testing.
+  - For a searched key/city, app will store to CoreData and retrieve it for next searches. App won't have to call Cloud API anymore.
 #### [Not yet] 8. Accessibility for Disability Supports: screen, adjust the display size or font size.
 #### [Supported] 9. Entity relationship diagram for the database and solution diagrams for the components, infrastructure design if any
   - See the diagram in the commenent below:
@@ -28,6 +30,7 @@ This is the iOS demo source code for my iOS Development Challenge at NAB. Follow
 #### b.  Brief explanation for the code folder structure and the key Objective-C/Swift libraries and frameworks being used
   - TBD
 #### c.  All the required steps in order to get the application run on local computer
-  - TBD
+  - 1. Please use CocoaPods to install third-party dependencies from root project first. See it if you are not familiar with Pod: https://guides.cocoapods.org/using/getting-started.html
+  - 2. Open the `mvl.xcworkspace` in Xcode, just build and run it on any simulator. If you want to use a real devices, please re-configure the team and bundle ID with your own information.
 #### d.  Checklist of items the candidate has done.
   - See the check list above
