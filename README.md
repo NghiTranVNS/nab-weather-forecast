@@ -14,7 +14,7 @@ This is the iOS demo source code for my iOS Development Challenge at NAB. Follow
 #### [Not yet] 5. Acceptance Tests
 #### [Supported] 6. Exception handling
 #### [Supported] 7. Caching handling
-  - Aplly Core Data to for caching
+  - Aplly Core Data to caching
 #### [Not yet] 8. Accessibility for Disability Supports: screen, adjust the display size or font size.
 #### [Supported] 9. Entity relationship diagram for the database and solution diagrams for the components, infrastructure design if any
   - See the diagram in the commenent below:
