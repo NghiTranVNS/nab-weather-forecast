@@ -58,6 +58,25 @@
 		564BDD2E282C2C020080E576 /* MVLCloudWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564BDD2D282C2C020080E576 /* MVLCloudWeather.swift */; };
 		564BDD2F282C2C020080E576 /* MVLCloudWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564BDD2D282C2C020080E576 /* MVLCloudWeather.swift */; };
 		564BDD30282C2C020080E576 /* MVLCloudWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564BDD2D282C2C020080E576 /* MVLCloudWeather.swift */; };
+		564BDD31282C76090080E576 /* MVLWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5632415B28283DC000F75E8F /* MVLWeatherViewModel.swift */; };
+		564BDD32282C760A0080E576 /* MVLWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5632415B28283DC000F75E8F /* MVLWeatherViewModel.swift */; };
+		564BDD33282C76310080E576 /* mvl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B0827BFEE720050287C /* mvl.xcdatamodeld */; };
+		564BDD34282C76310080E576 /* mvl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B0827BFEE720050287C /* mvl.xcdatamodeld */; };
+		564BDD35282C763A0080E576 /* MVLWebAPIServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B8927BFF33C0050287C /* MVLWebAPIServiceImpl.swift */; };
+		564BDD36282C763B0080E576 /* MVLWebAPIServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B8927BFF33C0050287C /* MVLWebAPIServiceImpl.swift */; };
+		564BDD37282C763E0080E576 /* MVLWebAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B7D27BFF33C0050287C /* MVLWebAPIService.swift */; };
+		564BDD38282C763E0080E576 /* MVLWebAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B7D27BFF33C0050287C /* MVLWebAPIService.swift */; };
+		564BDD39282C76460080E576 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B7927BFF33C0050287C /* NSObject+Ext.swift */; };
+		564BDD3A282C76470080E576 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B7927BFF33C0050287C /* NSObject+Ext.swift */; };
+		564BDD3B282C76490080E576 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B6C27BFF33C0050287C /* GlobalVariables.swift */; };
+		564BDD3C282C764A0080E576 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B6C27BFF33C0050287C /* GlobalVariables.swift */; };
+		564BDD3D282C76550080E576 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B0127BFEE720050287C /* SceneDelegate.swift */; };
+		564BDD3E282C76560080E576 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7B0127BFEE720050287C /* SceneDelegate.swift */; };
+		564BDD3F282C765E0080E576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7AFF27BFEE720050287C /* AppDelegate.swift */; };
+		564BDD40282C765F0080E576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7AFF27BFEE720050287C /* AppDelegate.swift */; };
+		564BDD44282C78A70080E576 /* mvlMockDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564BDD43282C78A70080E576 /* mvlMockDataTests.swift */; };
+		564BDD47282C79770080E576 /* MockWeatherReposistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564BDD46282C79770080E576 /* MockWeatherReposistory.swift */; };
+		564BDD49282C84200080E576 /* MockWebAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564BDD48282C84200080E576 /* MockWebAPIService.swift */; };
 		7E88DB3460D2F41F740F9A58 /* Pods_mvlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE50A769BFF7FD4CA527320E /* Pods_mvlTests.framework */; };
 		AE7FC1B427C2D0FF008D9059 /* MVLLocalStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7FC1B327C2D0FF008D9059 /* MVLLocalStoreService.swift */; };
 		AE7FC1B527C2D0FF008D9059 /* MVLLocalStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7FC1B327C2D0FF008D9059 /* MVLLocalStoreService.swift */; };
@@ -115,6 +134,9 @@
 		56324161282841B000F75E8F /* MVLWeatherRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLWeatherRepositoryImpl.swift; sourceTree = "<group>"; };
 		564BDD29282C2B810080E576 /* MVLCloudSearchKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLCloudSearchKey.swift; sourceTree = "<group>"; };
 		564BDD2D282C2C020080E576 /* MVLCloudWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLCloudWeather.swift; sourceTree = "<group>"; };
+		564BDD43282C78A70080E576 /* mvlMockDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvlMockDataTests.swift; sourceTree = "<group>"; };
+		564BDD46282C79770080E576 /* MockWeatherReposistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherReposistory.swift; sourceTree = "<group>"; };
+		564BDD48282C84200080E576 /* MockWebAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebAPIService.swift; sourceTree = "<group>"; };
 		6CD1B7F2AEA8491172D0FAA0 /* Pods-mvl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvl.debug.xcconfig"; path = "Target Support Files/Pods-mvl/Pods-mvl.debug.xcconfig"; sourceTree = "<group>"; };
 		A7B4446CC1E1FFFB464C557C /* Pods-mvlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvlTests.debug.xcconfig"; path = "Target Support Files/Pods-mvlTests/Pods-mvlTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA25BC5B5E1565A0B7A03E09 /* Pods-mvl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvl.release.xcconfig"; path = "Target Support Files/Pods-mvl/Pods-mvl.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +214,15 @@
 			path = Weather;
 			sourceTree = "<group>";
 		};
+		564BDD45282C78D50080E576 /* MockRepository */ = {
+			isa = PBXGroup;
+			children = (
+				564BDD46282C79770080E576 /* MockWeatherReposistory.swift */,
+				564BDD48282C84200080E576 /* MockWebAPIService.swift */,
+			);
+			path = MockRepository;
+			sourceTree = "<group>";
+		};
 		81FAC112650990203BFCAA42 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +292,8 @@
 		AE9A7B1827BFEE760050287C /* mvlTests */ = {
 			isa = PBXGroup;
 			children = (
+				564BDD43282C78A70080E576 /* mvlMockDataTests.swift */,
+				564BDD45282C78D50080E576 /* MockRepository */,
 				AE9A7B1927BFEE760050287C /* mvlTests.swift */,
 			);
 			path = mvlTests;
@@ -647,20 +680,31 @@
 				563241042827D31100F75E8F /* MVLWeather.swift in Sources */,
 				5632413D2828031B00F75E8F /* MVLLocalStoreSearchKey+CoreDataClass.swift in Sources */,
 				563241402828031B00F75E8F /* MVLLocalStoreWeather+CoreDataProperties.swift in Sources */,
+				564BDD39282C76460080E576 /* NSObject+Ext.swift in Sources */,
 				564BDD2F282C2C020080E576 /* MVLCloudWeather.swift in Sources */,
 				AE7FC1B527C2D0FF008D9059 /* MVLLocalStoreService.swift in Sources */,
+				564BDD44282C78A70080E576 /* mvlMockDataTests.swift in Sources */,
+				564BDD47282C79770080E576 /* MockWeatherReposistory.swift in Sources */,
 				56324155282834A400F75E8F /* MVLWeatherTableViewCell.swift in Sources */,
+				564BDD3F282C765E0080E576 /* AppDelegate.swift in Sources */,
 				563241082827DD3800F75E8F /* MVLSearchKey.swift in Sources */,
+				564BDD31282C76090080E576 /* MVLWeatherViewModel.swift in Sources */,
 				56324163282841B000F75E8F /* MVLWeatherRepositoryImpl.swift in Sources */,
 				5632410C2827DE7900F75E8F /* MVLLocalStoreWeather.swift in Sources */,
+				564BDD35282C763A0080E576 /* MVLWebAPIServiceImpl.swift in Sources */,
 				564BDD2B282C2B810080E576 /* MVLCloudSearchKey.swift in Sources */,
+				564BDD49282C84200080E576 /* MockWebAPIService.swift in Sources */,
 				563241372828031B00F75E8F /* MVLLocalStoreSearchKey+CoreDataProperties.swift in Sources */,
 				AE7FC1B927C2D380008D9059 /* MVLLocalStoreServiceCoreDataImpl.swift in Sources */,
 				5632413A2828031B00F75E8F /* MVLLocalStoreWeather+CoreDataClass.swift in Sources */,
 				563241102827DEC500F75E8F /* MVLLocalStoreSearchKey.swift in Sources */,
+				564BDD3B282C76490080E576 /* GlobalVariables.swift in Sources */,
+				564BDD37282C763E0080E576 /* MVLWebAPIService.swift in Sources */,
+				564BDD3D282C76550080E576 /* SceneDelegate.swift in Sources */,
 				563241502828293800F75E8F /* MVLWeatherForcastViewController.swift in Sources */,
 				AE9A7B1A27BFEE760050287C /* mvlTests.swift in Sources */,
 				5632415F2828417800F75E8F /* MVLWeatherRepository.swift in Sources */,
+				564BDD33282C76310080E576 /* mvl.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +715,8 @@
 				564BDD2C282C2B810080E576 /* MVLCloudSearchKey.swift in Sources */,
 				AE7FC1BA27C2D380008D9059 /* MVLLocalStoreServiceCoreDataImpl.swift in Sources */,
 				AE9A7B2627BFEE760050287C /* mvlUITestsLaunchTests.swift in Sources */,
+				564BDD36282C763B0080E576 /* MVLWebAPIServiceImpl.swift in Sources */,
+				564BDD32282C760A0080E576 /* MVLWeatherViewModel.swift in Sources */,
 				AE7FC1B627C2D0FF008D9059 /* MVLLocalStoreService.swift in Sources */,
 				563241092827DD3800F75E8F /* MVLSearchKey.swift in Sources */,
 				563241512828293800F75E8F /* MVLWeatherForcastViewController.swift in Sources */,
@@ -679,10 +725,16 @@
 				5632413E2828031B00F75E8F /* MVLLocalStoreSearchKey+CoreDataClass.swift in Sources */,
 				5632413B2828031B00F75E8F /* MVLLocalStoreWeather+CoreDataClass.swift in Sources */,
 				563241412828031B00F75E8F /* MVLLocalStoreWeather+CoreDataProperties.swift in Sources */,
+				564BDD38282C763E0080E576 /* MVLWebAPIService.swift in Sources */,
+				564BDD3C282C764A0080E576 /* GlobalVariables.swift in Sources */,
 				5632410D2827DE7900F75E8F /* MVLLocalStoreWeather.swift in Sources */,
+				564BDD34282C76310080E576 /* mvl.xcdatamodeld in Sources */,
 				56324164282841B000F75E8F /* MVLWeatherRepositoryImpl.swift in Sources */,
+				564BDD3A282C76470080E576 /* NSObject+Ext.swift in Sources */,
 				563241382828031B00F75E8F /* MVLLocalStoreSearchKey+CoreDataProperties.swift in Sources */,
 				56324156282834A400F75E8F /* MVLWeatherTableViewCell.swift in Sources */,
+				564BDD40282C765F0080E576 /* AppDelegate.swift in Sources */,
+				564BDD3E282C76560080E576 /* SceneDelegate.swift in Sources */,
 				563241602828417800F75E8F /* MVLWeatherRepository.swift in Sources */,
 				564BDD30282C2C020080E576 /* MVLCloudWeather.swift in Sources */,
 				563241492828252400F75E8F /* MVLNavigationViewController.swift in Sources */,
